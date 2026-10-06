@@ -24,7 +24,7 @@ Gilt fuer Arbeitsblaetter, Stegreifaufgaben und Schulaufgaben, die mit dem `schu
   ```latex
   Das Zauberwort ist \fillin[zauberwort][2in].
   ```
-- **In Tabellen** ist `\fillin`s eingebaute Unterstreichung (`\hrulefill`) redundant zum Zellenrand → eigener Befehl `\tablefillin{antwort}` (siehe `tablefillin-patch.tex` — muss in `schulexam.cls` selbst ergaenzt werden, nicht im Dokument wiederholt).
+- **In Tabellen** ist `\fillin`s eingebaute Unterstreichung (`\hrulefill`) redundant zum Zellenrand → eigener Befehl `\tablefillin{antwort}` (in `schulexam.cls` enthalten).
 - Freie, handschriftliche Antworten (`solutionorlines`/`solution`): Antwort direkt in der Umgebung angeben.
 
 ## Punkte, Aufbau

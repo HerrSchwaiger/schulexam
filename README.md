@@ -17,7 +17,6 @@ schulexam/
 ├── images/                    Schullogo, Kleeblatt (von der Klasse eingebunden)
 └── konventionen/
     ├── konventionen.md        Header-Setup, Befehle, Teil-A/B-Logik
-    ├── tablefillin-patch.tex  Historisch – \tablefillin ist inzwischen in der Klasse enthalten
     └── vorlagen/              Grundgerüste für Arbeitsblatt und Schulaufgabe
 ```
 
