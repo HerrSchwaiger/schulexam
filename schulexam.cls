@@ -103,22 +103,26 @@
 % Header-Tabelle (erste Seite)
 % ----------------------------------------------------------
 
+% Formularstil: kleine graue Feldbeschriftung oben links, darunter Platz zum
+% handschriftlichen Ausfuellen (Felder ca. 1,4 cm hoch, breites Namensfeld)
+\definecolor{kopffeldgrau}{HTML}{4B5563}
+\newcommand{\kopffeld}[1]{{\footnotesize\color{kopffeldgrau}#1}}
 \newcommand{\examheader}{%
-\begin{tabularx}{\textwidth}{|X|p{3cm}|p{4cm}|p{3cm}|}
-  \hline
-  \multicolumn{3}{|c|}{%
-    \rule{0pt}{20pt}%
-    \centering\large\textbf{\examname{} im Fach \fach}
-  } & Note: \\
-  \hline
-  Name: &
-  Klasse: IT\jahrgangsstufe &
-  Datum: &
-  Punkte: \underline{\hspace{0.5cm}}/\numpoints \\
-  \hline
-\end{tabularx}
+  \noindent
+  {\renewcommand{\arraystretch}{1}%
+  \begin{tabularx}{\textwidth}{|X|p{1.7cm}|p{2.8cm}|p{3.2cm}|}
+    \hline
+    \multicolumn{3}{|c|}{\raisebox{-.3cm}[0pt][0pt]{\large\textbf{\examname{} im Fach \fach}}}
+      & \rule{0pt}{2.6ex}\kopffeld{Note}\rule[-.8cm]{0pt}{0pt} \\
+    \hline
+    \rule{0pt}{2.6ex}\kopffeld{Name}\rule[-.9cm]{0pt}{0pt} &
+    \rule{0pt}{2.6ex}\kopffeld{Klasse}\newline IT\jahrgangsstufe &
+    \rule{0pt}{2.6ex}\kopffeld{Datum} &
+    \rule{0pt}{2.6ex}\kopffeld{Punkte}\newline\rule{0pt}{.55cm}\hfill/\,\numpoints\hspace*{.2cm} \\
+    \hline
+  \end{tabularx}}
 
-\vspace{1cm}
+  \vspace{.8cm}
 }
 
 % ============================================================================
